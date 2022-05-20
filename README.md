@@ -1,0 +1,59 @@
+# djangorestframework quickstart
+In this repository, I followed a Django tutorial from the official site. Here is the link: https://www.django-rest-framework.org/tutorial/quickstart/
+
+This README provides the log what I've done with this repository. This repository also the result of my study in that tutorial.
+
+## Initial Steps
+See this page to read the full explanation: https://www.django-rest-framework.org/tutorial/quickstart/
+
+### 1. Create and run a Virtual Environment into your terminal
+Let's start this learn by creating your virtual environment (venv). Please refer to this link to learn how to make one: https://gist.github.com/ryumada/c22133988fd1c22a66e4ed1b23eca233
+
+### 2. Install packages
+Install these packages below using this command:
+```bash
+pip install package-name
+```
+
+**Required Packages**
+- Python (3.6, 3.7, 3.8, 3.9, 3.10)
+- Django (2.2, 3.0, 3.1, 3.2, 4.0)
+
+**Optional Packages:**
+- PyYAML, uritemplate (5.1+, 3.0.0+) - Schema generation support.
+- Markdown (3.0.0+) - Markdown support for the browsable API.
+- Pygments (2.4.0+) - Add syntax highlighting to Markdown processing.
+- django-filter (1.0.1+) - Filtering support.
+- django-guardian (1.1.1+) - Object level permissions support.
+
+### 3. Create a Django Project
+create a project called **tutorial**, with this command:
+```bash
+django-admin startproject tutorial
+```
+
+### 4. Create an App inside the project
+Go inside the project directory.
+```bash
+cd tutorial
+```
+
+Then create an app called **quickstart**.
+```bash
+django-admin startapp quickstart
+```
+
+Then get back to **tutorial**'s directory.
+```bash
+cd ..
+```
+
+### 5. Migrate your database for the first time
+```bash
+python3 manage.py migrate
+```
+
+### 6. Create an initial user
+```bash
+python3 manage.py createsuperuser --email admin@example.com --username admin
+```
