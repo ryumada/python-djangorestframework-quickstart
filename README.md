@@ -18,6 +18,7 @@ pip install package-name
 **Required Packages**
 - Python (3.6, 3.7, 3.8, 3.9, 3.10)
 - Django (2.2, 3.0, 3.1, 3.2, 4.0)
+- DjangoRESTframework
 
 **Optional Packages:**
 - PyYAML, uritemplate (5.1+, 3.0.0+) - Schema generation support.
@@ -28,9 +29,12 @@ pip install package-name
 
 ### 3. Create a Django Project
 create a project called **tutorial**, with this command:
+
 ```bash
-django-admin startproject tutorial
+django-admin startproject tutorial .
 ```
+
+> In this repository I'm not using the last dot (.) syntax, so it'll create the project inside **tutorial** directory. But in the future, you should create the project inside the root repository.
 
 ### 4. Create an App inside the project
 Go inside the project directory.
